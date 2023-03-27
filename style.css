@@ -165,7 +165,11 @@ main {
   font-weight: 700;
   color: #c7365f;
 }
-
+.winner0,
+.winner1 {
+  color: #f30f17;
+  font-size: 5rem;
+}
 .hidden {
   display: none;
 }
