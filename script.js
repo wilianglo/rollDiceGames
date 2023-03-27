@@ -1,7 +1,7 @@
 'use strict';
 //Selecting Elemen
 alert(
-  `The role : if dice "1" switch player & current score - 25, player reach score 100 is winner`
+  `The role : \n 1. if dice "1" switch player & current score minus 25,\n 2. score player who's first reach 100 is winner`
 );
 const score0EL = document.querySelector('#score--0');
 const score1EL = document.getElementById('score--1');
