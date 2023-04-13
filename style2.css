@@ -193,12 +193,17 @@ main {
     padding: 0.5rem 2rem;
   } */
   .dice {
+    top: 45%;
     left: 50%;
-    top: 20%;
-    height: 15rem;
+    height: 9rem;
+    opacity: 0.8;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    transition: all 0.75s;
   }
-
+  .winner0,
+  .winner1 {
+    font-size: 3rem;
+  }
   .btn {
     display: inline-block;
     margin: 1rem;
@@ -222,22 +227,20 @@ main {
   }
 
   .btn--new {
-    top: 48%;
-    left: 25%;
+    top: 3%;
+    left: 10%;
     font-size: 1.2rem;
   }
 
   .btn--roll {
     top: 48%;
-    left: 75%;
+    left: 80%;
     font-size: 1.2rem;
   }
-  .name {
-    margin-top: 3rem;
-  }
+
   .btn--hold {
     top: 48%;
-    left: 50%;
+    left: 20%;
     font-size: 1.2rem;
   }
 
@@ -246,37 +249,51 @@ main {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   }
 
+  /* .name0 {
+    top: 3%;
+  }
+  .score0 {
+    top: 15%;
+  }
+  .winner0 {
+    top: 20%;
+  }
+
+  #current0 {
+    position: absolute;
+    top: 22%;
+    left: 35%;
+    width: 33%;
+    padding: 1rem;
+    margin-bottom: 3rem;
+  } */
+
   .btn:focus {
     outline: none;
   }
   .current {
-    background-color: #c7365f;
-    opacity: 0.8;
-    border-radius: 9px;
-    color: #fff;
     width: 35%;
     padding: 1rem;
     margin-bottom: 3rem;
-    text-align: center;
-    transition: all 0.75s;
   }
 }
 @media screen and (max-width: 468px) {
   .btn {
-    font-size: 1.2rem;
+    font-size: 0rem;
     padding: 0.5rem 1rem;
-    border-radius: 50em;
-    -webkit-border-radius: 50em;
-    -moz-border-radius: 50em;
-    -ms-border-radius: 50em;
-    -o-border-radius: 50em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
   .dice {
     position: absolute;
+    top: 47%;
     left: 50%;
-    top: 20%;
+    opacity: 0.5;
     /* transform: translateX(-50%); */
-    height: 10rem;
+    height: 7rem;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
   }
 }
